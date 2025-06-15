@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador | Gustavo Porto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Trebuchet+MS&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="mate.css">
+    <link rel="stylesheet" href="css/PI.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../home.html">Meu<span>Portfólio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../materias.html">Matérias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Início -->
+    <header id="inicio" class="inicio-section">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Projeto Integrador</h1>
+                <p class="lead">Materiais Estudados e Projetos Que Estou Desenvolvendo </p>
+                <a href="#introducao" class="btn btn-primary">Começar Leitura</a>
+            </div>
+            <!-- Referencia da img -->
+            <div class="img-attribution">
+                Imagem de fundo: <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Designed by Freepik</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- conteudo principal -->
+    <section id="introducao" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a <span>Matéria</span></h2>
+                <p><strong>Professor:</strong> Jefferson Antonio Ribeiro Passerini</p>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="content-box">
+                        <h3>O que é?</h3>
+                        <p>
+                            O Projeto Integrador I é uma disciplina que permite aos estudantes colocar 
+                            em prática os conhecimentos adquiridos ao longo do curso, por meio do 
+                            desenvolvimento de sistemas voltados para clientes reais.<br>
+                            Nela, os alunos enfrentam desafios concretos do mercado, ganhando experiência 
+                            prática e aproximando-se do ambiente profissional.
+                        </p>
+                        
+                        <h3>Objetivos</h3>
+                        <p>
+                            O objetivo dessa matéria é ajudar os alunos a desenvolverem habilidades práticas 
+                            desenvolvendo seus própios projetos, além de proporcionar uma experiência
+                            prática que simula o ambiente de trabalho real.
+                        </p>
+
+                        <h3>Conteudo</h3>
+                        <p>
+                            Durante todo o Semestre, vimos diversos conteudos e agora por meio deste 
+                            projeto venho falar um pouco sobre o que estudei ao longo desse semestre.
+                            <br><br>
+                        </p>
+                        <br><br>
+                        <!-- Div expansiva 1 -->
+                        <div class="expansive-area">
+                            <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                Git
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="expansive-content">
+                                <br>
+                                <h4>O que é o Git?</h4>
+                                <p>
+                                    O Git é um sistema de controle de versão distribuído, usado principalmente 
+                                    no desenvolvimento de software. Ele permite que várias pessoas trabalhem no 
+                                    mesmo projeto ao mesmo tempo, mantendo um histórico completo de todas as alterações 
+                                    feitas nos arquivos.
+                                </p>
+                                <h4>O que foi ensinado?</h4>
+                                <p>
+                                    Durante as aulas, aprendemos sobre como implementar o Git em nossos projetos,
+                                    como criar repositórios, fazer commits, branches e pull requests utilizando 
+                                    o GitHub como plataforma de hospedagem.<br>
+                                    E diversos comandos do Git.<br>
+                                </p>
+                                <h5>Comandos do Git:</h5>
+                                <p>
+                                    <code>git config --list</code> = Exibe algumas informações e o nome e email de quem está logado no PC (caso tenha alguém logado). Em casos de erro, aperte "q".<br>
+                                    <code>git config --global user.name "Nome do Usuário"</code> = Informa o nome do usuário que deseja logar.<br>
+                                    <code>git config --global user.email "Email do usuário"</code> = Informa o email do usuário.<br>
+                                    <code>git config --global --unset-all user.name</code> = Limpa os nomes logados.<br>
+                                    <code>git config --global --unset-all user.email</code> = Limpa os emails logados.<br>
+                                    <code>git init</code> = Cria um repositório na pasta (repositório oculto).<br>
+                                    <code>git branch -m master main</code> = Muda o nome da branch de master para main.<br>
+                                    <code>git status</code> = Mostra o que tem na pasta.<br>
+                                    <code>git add &lt;Nome do arquivo&gt;</code> = Adiciona um arquivo ao diretório.<br>
+                                    <code>git add -all</code> ou <code>git add .</code> = Adiciona todos os arquivos ao diretório.<br>
+                                    <code>git commit -m "mensagem do commit"</code> = Salva as alterações e exibe a mensagem dessa alteração.<br>
+                                    <code>git log</code> = Mostra os commits (alterações) realizados no diretório.<br>
+                                    <code>git restore --staged &lt;arquivo&gt;</code> = Volta um arquivo específico.<br>
+                                    <code>git restore --staged .</code> = Volta todos os arquivos.<br>
+                                    <code>git restore [nome ou .]</code> = Retorna o diretório antigo (um arquivo ou todos).<br>
+                                    <code>git reset --hard</code> = Reseta tudo para o último commit confirmado.<br>
+                                    <code>git diff</code> = Verifica o que foi alterado.<br>
+                                    <code>git log -p</code>, <code>git log --oneline</code>, <code>git log --graph</code> = Mostra as alterações adicionadas.<br>
+                                    <code>git checkout</code> = Volta para qualquer outro commit (save).<br>
+                                    <code>git reset HEAD~1</code> = Desfaz a confirmação do último save.<br>
+                                    <code>git reset --hard</code> = Apaga o último save.<br>
+                                    <code>git reset --soft</code> = Desfaz o último commit, mas mantém as modificações em aberto.<br>
+                                    <code>git revert [código do save (oneline)]</code> = Reverte um commit específico.<br>
+                                    <code>git --abort</code> = Aborta o processo de revert.<br>
+                                    <b>Ao entrar no revert:</b> Aperte <b>Insert</b> para editar, <b>ALT+Q</b> para sair do modo edição, <b>:wq</b> para confirmar e sair.<br>
+                                    <code>.gitignore</code> = Arquivo para ignorar alterações em determinados arquivos/pastas.<br>
+                                    <code>git push origin main</code> = Envia alterações para o repositório remoto.<br>
+                                    <code>git pull origin main</code> = Puxa alterações do repositório remoto.<br>
+                                    <code>git branch</code> = Checa as branches atuais.<br>
+                                    <code>git checkout nome_branch</code> = Troca de branch.<br>
+                                    <code>git branch -d nome_branch</code> ou <code>git branch -D nome_branch</code> = Apaga a branch localmente.<br>
+                                    <code>git push --delete origin nome_branch</code> = Apaga a branch no GitHub.<br>
+                                    <code>git merge nome_branch</code> = Mescla a branch atual com a branch especificada.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Div expansiva 2 -->
+                        <div class="expansive-area">
+                            <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                Projeto
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="expansive-content">
+                                <br>
+                                <h4>O que fizemos?</h4>
+                                <p>
+                                    Durane todo esse semestre, continuamos o desenvolvimento do 
+                                    nosso TCC usado no ano passado, melhoramos toda a documentação, e ampliamos 
+                                    a ideia do nosso projeto, a um nivel muito maior do que ele seria 
+                                    inicialmente.<br>
+                                    Caso queira ver o projeto, basta acessar o botão abaixo.<br>
+                                </p>
+                                <a class="btn btn-outline-primary btn-sm"
+                                href="../projeto.html"
+                                rel="noopener noreferrer">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- apps -->
+    <section id="conteudo" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Apps</span> utilizados</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <img src="../../recurs/img/icones/github-icon.png" alt="VSCode" class="icon-img">
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>
+                            O GitHub é uma plataforma online de hospedagem de código-fonte que usa o Git como base. 
+                            Ele foi lançado em 2008 e é hoje uma das maiores comunidades de desenvolvedores do mundo. 
+                            O GitHub permite que você envie (ou "publique") seus projetos que estão versionados com 
+                            Git para a internet, facilitando o compartilhamento e a colaboração 
+                            com outras pessoas.<br><br>
+                            Em termos simples:<br>
+                            O GitHub é como uma “rede social de código”. Ele armazena os repositórios 
+                            (projetos Git) na nuvem e oferece diversas ferramentas para colaboração, 
+                            gerenciamento de projetos e integração com outras plataformas.
+                        </p>
+                        <a class="btn btn-outline-primary btn-sm"
+                        href="https://github.com"
+                        target="_blank" rel="noopener noreferrer">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <img src="../../recurs/img/icones/git-icon.png" alt="img-OnlineGDB" class="icon-img">
+                        </div>
+                        <h3>Git</h3>
+                        <p>
+                            O Git é um sistema de controle de versão distribuído criado por Linus Torvalds, o mesmo 
+                            criador do Linux, em 2005. Ele foi desenvolvido para ajudar equipes de desenvolvimento a 
+                            gerenciar o código-fonte de seus projetos de forma eficiente, segura e colaborativa.<br><br>
+                            Em termos simples:<br>
+                            O Git permite que você acompanhe todas as modificações feitas em um projeto, mantenha um 
+                            histórico completo das mudanças e colabore com outras pessoas, mesmo que todos estejam 
+                            trabalhando em partes diferentes do projeto ao mesmo tempo.
+                        </p>
+                        <a class="btn btn-outline-primary btn-sm"
+                           href="https://git-scm.com"
+                           target="_blank" rel="noopener noreferrer">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Rodapé -->
+        <footer class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 <span>Gustavo Porto</span>. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Desenvolvido com Visual Estudio Code por Gustavo Henrique Moreira Porto</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        //efeito de trasnparencia do navbar
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const inicio = document.querySelector('.inicio-section');
+            const inicioBottom = inicio.offsetTop + inicio.offsetHeight;
+
+            if (window.scrollY >= inicioBottom - 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Botão voltar ao topo
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 400) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        // Scroll suave para o topo
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

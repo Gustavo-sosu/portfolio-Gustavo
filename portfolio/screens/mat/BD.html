@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados | Gustavo Porto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Trebuchet+MS&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="mate.css">
+    <link rel="stylesheet" href="css/BD.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../home.html">Meu<span>Portfólio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../materias.html">Matérias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Início -->
+    <header id="inicio" class="inicio-section">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Téc. Avanç. BD. Rel e Não Rel</h1>
+                <p class="lead">Materiais Estudados e Projetos Que Estou Desenvolvendo </p>
+                <a href="#introducao" class="btn btn-primary">Começar Leitura</a>
+            </div>
+            <!-- Referencia da img -->
+            <div class="img-attribution">
+                Imagem de fundo: <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Designed by Freepik</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- conteudo principal -->
+    <section id="introducao" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a <span>Matéria</span></h2>
+                <p><strong>Professor:</strong> Alexandre Bernardes</p>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="content-box">
+                        <h3>O que é?</h3>
+                        <p>Técnicas avançadas em bancos de dados relacionais e não relacionais 
+                            referem-se a estratégias e ferramentas mais complexas utilizadas 
+                            para otimizar o desempenho, escalabilidade e segurança desses sistemas 
+                            de gestão de dados. Em bancos de dados relacionais, estas 
+                            técnicas podem incluir a criação de índices avançados, otimização de 
+                            consultas, partições e replicação.
+                        </p>
+                        
+                        <h3>Objetivos</h3>
+                        <p>
+                            Durante as aulas tivemos como objetivo principal compreender as diversas questões logicas, 
+                            técnicas e praticas sobre situações que são enfrentadas no mercado de trabalho.
+                        </p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>
+                                Os componentes mais basicos da matéria foram aprendidos durantes 
+                                os anos anteriores. Como por exemplo: <br><br>
+                                <strong>
+                                    - Extração de Dados de uma Tabela (SELECT, FROM e WHERE)<br>
+                                    - Manipulação de Dados Numéricos (+, -, *, /, %)<br>
+                                    - Consultas Qualificadas (AND, OR, NOT e =, >=, <>, <=, >, <)<br>
+                                    - Operadores Avançados (BETWEEN, IN, LIKE, IS NULL)<br>
+                                    - Agrupamento de Dados (GROUP BY, HAVING)<br>
+                                    - Funções de Agregação (COUNT, SUM, AVG, MAX, MIN)<br>
+                                    entre outros.
+                                </strong>
+                            </p>
+                        </div>
+
+                        <h3>Conteudo</h3>
+                        <p>
+                            Durante todo o Semestre, vimos diversos conteudos e agora por meio deste 
+                            projeto venho falar um pouco sobre o que estudei ao longo desse semestre.
+                        </p>
+                            <br><br>
+                            <h4>View</h4>
+                            <p>
+                                É uma tabela virtual que armazena a definição de uma consulta SQL. 
+                                Ela funciona como uma tabela real, mas não contém dados fisicamente 
+                                armazenados.<br>Ao invés disso, os dados são gerados dinamicamente 
+                                quando a view é consultada, baseando-se na query que a define.
+                            </p>
+                            <br><br>
+                            <!-- Div expansiva 1 -->
+                            <div class="expansive-area">
+                                <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                    Stored Procedures PostgreSQL
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="expansive-content">
+                                    <br>
+                                    <h2>O que são Procedures e Functions?</h2><br>
+                                    <p>
+                                        Quando uma aplicação executa uma query SQL comum, o servidor precisa interpretá-la, compilá-la e 
+                                        executá-la a cada vez, o que pode causar lentidão em ambientes com muitos dados ou alta 
+                                        concorrência. Para melhorar o desempenho, reutilizar código e organizar melhor as regras de 
+                                        negócio, os SGBDs (como PostgreSQL, Oracle e SQL Server) permitem encapsular comandos SQL em 
+                                        blocos reutilizáveis chamados <strong>Stored Procedures</strong> e <strong>Functions.</strong> Esses blocos são armazenados no 
+                                        servidor e executados localmente, o que reduz o tráfego de rede, aumenta a segurança e melhora o 
+                                        tempo de resposta das aplicações.
+                                    </p><br>
+
+                                    <h4>Diferença entre Function e Procedure</h4>
+                                    <div class="table-responsive">
+                                        <table class="academic-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Característica</th>
+                                                    <th>Function</th>
+                                                    <th>Procedure</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Retorno</td>
+                                                    <td>Sempre retorna um valor</td>
+                                                    <td>Pode retornar ou não</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Uso mais comum</td>
+                                                    <td>Cálculos, consultas, transformações</td>
+                                                    <td>Ações como inserção, exclusão etc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Suporte a múltiplos resultados</td>
+                                                    <td>Sim (inclusive com RETURNS TABLE)</td>
+                                                    <td>Não diretamente, mas pode usar parâmetros OUT</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><br>
+
+                                    <h4>Tipos de Funções no PostgreSQL</h4><br><br>
+                                    <h5>Funções em Linguagem SQL</h5>
+                                    <p>
+                                        • Utilizam apenas comandos SQL simples: SELECT, INSERT, UPDATE, DELETE.<br>
+                                        • Não suportam estruturas de controle (como IF, LOOP).<br>
+                                        • Indicadas para operações simples e diretas.
+                                    </p><br>
+                                    <h5>Funções Procedurais (PL/pgSQL)</h5>
+                                    <p>
+                                        • Suportam variáveis, loops, condições, cursores etc.<br>
+                                        • Usam a linguagem PL/pgSQL, semelhante ao PL/SQL do Oracle.<br>
+                                        • Podem ser utilizadas para lógicas de negócio complexas.<br>
+                                        • Outras linguagens suportadas incluem: PL/Python, PL/Perl, PL/Tcl.
+                                    </p><br>
+                                    <h5>Funções em Linguagens Externas</h5>
+                                    <p>
+                                        • Criadas com linguagens como C, Java, Python.<br>
+                                        • Permitem a criação de algoritmos complexos e de alto desempenho.<br>
+                                        • Exigem instalação e configuração adicionais no servidor PostgreSQL.<br>
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Div expansiva 2 -->
+                            <div class="expansive-area">
+                                <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                    Data Control Language
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="expansive-content">
+                                    <br>
+                                    <p>
+                                        É formado por um grupo de comandos SQL, responsáveis pela 
+                                        administração dos usuários, dos grupos e das permissões.
+                                    </p><br>
+                                    <h4>Papel:</h4>
+
+                                    <p>
+                                        Um papel (role) é uma entidade no PostgreSQL utilizada para 
+                                        gerenciar permissões e acessos ao banco de dados. Ela pode ser 
+                                        configurada para realizar login (atuando como um usuário), 
+                                        agrupar outros papéis (funcionando como um grupo) ou exercer 
+                                        ambas as funções. Além disso, papéis podem ser proprietários 
+                                        de objetos no banco e atribuir ou herdar privilégios de 
+                                        outros papéis.<br><br>
+                                    </p>
+                                    <h5>Comandos:</h5>
+                                    <p>
+                                        CREATE ROLE nome [ [ WITH ] opção [ ... ] ]<br>
+                                        Abaixo estão as opções que podem ser utilizadas 
+                                        para criar um papel:
+                                    </p>
+                                    <!-- Tabela de 2 campos -->
+                                    <div class="table-responsive">
+                                        <table class="academic-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Opção</th>
+                                                    <th>Descrição</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>LOGIN / NOLOGIN</td>
+                                                    <td>Permite ou não o login.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SUPERUSER / NOSUPERUSER</td>
+                                                    <td>Define se é superusuário</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>CREATEDB / NOCREATEDB </td>
+                                                    <td>Pode ou não criar bancos</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>CREATEROLE / NOCREATEROLE </td>
+                                                    <td>Pode ou não criar papéis</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>INHERIT / NOINHERIT</td>
+                                                    <td>Herda ou não privilégios de papéis aos 
+                                                        quais pertence
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ENCRYPTED / UNENCRYPTED </td>
+                                                    <td>Define se a senha é criptografada</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VALID UNTIL 'YYYY-MM-DD' </td>
+                                                    <td>Expira após essa data</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CONNECTION LIMIT n </td>
+                                                    <td>Limita conexões simultâneas (-1 = sem limite)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IN ROLE, ROLE</td>
+                                                    <td>Define relacionamentos com outros papéis</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p>
+                                        alter role nome_ papel with encrypted password ‘123’ 
+                                        -- Para Alterar um papel (role)<br>
+                                        drop role nome_papel -- exclui o papel<br>
+                                        Select * from pg_user -- Para Listar todos os papéis
+                                    </p><br>
+
+                                    <h4>Grupos:</h4>
+                                    <p>Grupos são representados por papéis sem permissão de login.</p>
+                                    <h5>Comandos:</h5>
+                                    <p>
+                                        create role nome_grupo -- Criar um papel - grupo<br>
+                                        Grant nome_grupo to user1, user2, user3 
+                                        -- Adiciona usuários a um grupo<br>
+                                        Revoke nome_grupo from user3 -- Remove usuários de um grupo<br>
+                                        drop role nome_grupo -- Para Excluir um papel - grupo<br>
+                                        Select * from pg_group -- Para Listar todos os grupos
+                                    </p>
+                                    <h5>Privilegios:</h5>
+                                    <p>
+                                        Privilégios são permissões que determinam o que um usuário 
+                                        pode ou não pode fazer dentro do banco de dados.
+                                    </p>
+                                    <div class="highlight-box">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <p>
+                                            <strong>Superusuário:</strong><br>
+                                            Possui acesso completo e irrestrito a todos os objetos e operações 
+                                            em qualquer banco de dados do PostgreSQL.<br><br>
+                                            <strong>Propriedade de Objetos:</strong><br>
+                                            Quando um usuário cria um objeto (como um banco de dados, tabela, 
+                                            view, função etc.), ele se torna automaticamente o proprietário 
+                                            desse objeto.<br><br>
+                                            <strong>Concessão de Privilégios:</strong><br>
+                                            Para que outros papéis ou usuários possam acessar ou manipular um 
+                                            objeto, é necessário conceder explicitamente os privilégios 
+                                            apropriados (como SELECT, INSERT, UPDATE, DELETE, entre outros).
+                                        </p>
+                                    </div>
+                                    <h5>Comandos:</h5>
+                                    <p>
+                                        Grant update on nome_tabela to nome_papel 
+                                        -- Dando privilégios a um papel<br>
+                                        Grant select on nome_tabela to nome_grupo 
+                                        --  Dando privilégios a um papel<br>
+                                        Revoke all on nome_tabela from public 
+                                        -- Removendo todos os privilégios de todos os usuários
+                                    </p><br>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- apps -->
+    <section id="conteudo" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Apps</span> utilizados</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <img src="../../recurs/img/icones/pgAdmin-Icon.png" alt="pgAdmin" class="icon-img">
+                        </div>
+                        <h3>pgAdmin</h3>
+                        <p>
+                            O pgAdmin é uma ferramenta de código aberto usada para gerenciar e 
+                            desenvolver bancos de dados PostgreSQL. É uma interface gráfica que 
+                            permite aos usuários interagir com o banco de dados, executando 
+                            consultas SQL, visualizando e modificando estruturas de dados e 
+                            monitorando o desempenho. 
+                        </p>
+                        <a class="btn btn-outline-primary btn-sm"
+                           href="https://www.pgadmin.org"
+                           target="_blank" rel="noopener noreferrer">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <img src="../../recurs/img/icones/sqlServe-icon.webp" alt="pgAdmin" class="icon-img">
+                        </div>
+                        <h3>SQL Server 2022 Configuration Manager</h3>
+                        <p>
+                            O SQL Server 2022 Configuration Manager é uma ferramenta que permite 
+                            gerenciar as configurações do Microsoft SQL Server. Ele fornece uma 
+                            interface gráfica para configurar serviços, protocolos de rede, 
+                            instâncias do SQL Server e outras opções de configuração essenciais 
+                            para o funcionamento adequado do banco de dados.
+                        </p>
+                        <a class="btn btn-outline-primary btn-sm"
+                           href="https://learn.microsoft.com/en-us/sql/tools/configuration-manager/sql-server-configuration-manager?view=sql-server-ver17"
+                           target="_blank" rel="noopener noreferrer">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-8 mx-auto">
+                    <div class>
+                        <h3>Trabalhos Realizados</h3>
+                        <p>
+                            Abaixo estão listados alguns dos trabalhos realizados durante o semestre, todos de acordo com 
+                            o que foi estudado. Cada um dos trabalhos estara salvo em meu GitHub, caso  queira ver 
+                            o que foi feito, basta clicar no link "Acessar no GitHub"
+                        </p>
+                        
+                        <div class="table-responsive">
+                            <table class="academic-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nome:</th>
+                                        <th>Link:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Exercicio Sobre Views</td>
+                                        <td>
+                                            <a href="https://github.com/Gustavo-sosu/BD-all/blob/main/atividades/ATV-BD_Exercícios%20sobre%20Views-28_03_2025.txt" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                Acessar no GitHub
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exercicios: Procedimentos Funcoes</td>
+                                        <td>
+                                            <a href="https://github.com/Gustavo-sosu/BD-all/blob/main/atividades/atv-10-05_Procedimentos%20%20Funcoes.txt" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                Acessar no GitHub
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exercicios sobre Data Control Language</td>
+                                        <td>
+                                            <a href="https://github.com/Gustavo-sosu/BD-all/blob/main/atividades/atv--30_05-DCL%20(Data%20Control%20Language).txt" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                Acessar no GitHub
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Rodapé -->
+        <footer class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 <span>Gustavo Porto</span>. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Desenvolvido com Visual Estudio Code por Gustavo Henrique Moreira Porto</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        //efeito de trasnparencia do navbar
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const inicio = document.querySelector('.inicio-section');
+            const inicioBottom = inicio.offsetTop + inicio.offsetHeight;
+
+            if (window.scrollY >= inicioBottom - 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Botão voltar ao topo
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 400) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        // Scroll suave para o topo
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

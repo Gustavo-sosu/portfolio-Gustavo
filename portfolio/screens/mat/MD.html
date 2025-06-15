@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Discreta | Gustavo Porto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Trebuchet+MS&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="mate.css">
+    <link rel="stylesheet" href="css/MD.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../home.html">Meu<span>Portfólio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../materias.html">Matérias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Início -->
+    <header id="inicio" class="inicio-section">
+        <div class="container">
+            <div class="inicio-content">
+                <h1>Matemática Discreta</h1>
+                <p class="lead">Materiais Estudados e Projetos Que Estou Desenvolvendo </p>
+                <a href="#introducao" class="btn btn-primary">Começar Leitura</a>
+            </div>
+            <!-- Referencia da img -->
+            <div class="img-attribution">
+                Imagem de fundo: <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Designed by Freepik</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- conteudo principal -->
+    <section id="introducao" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a <span>Matéria</span></h2>
+                <p><strong>Professor:</strong> Willian Guimaraes Borges</p>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="content-box">
+                        <h3>O que é?</h3>
+                        <p>
+                            Matemática Discreta é um ramo da matemática que estuda estruturas discretas, ou seja, 
+                            aquelas que não são contínuas.<br>
+                            Em vez de lidar com quantidades infinitamente divisíveis 
+                            (como no cálculo ou na álgebra), ela trabalha com elementos separados e distintos, 
+                            como números inteiros, conjuntos, grafos, relações e algoritmos.
+                        </p>
+                        
+                        <h3>Objetivos</h3>
+                        <p>
+                            O principal objetivo da Matemática Discreta é fornecer ferramentas teóricas e 
+                            lógicas para resolver problemas que envolvem estruturação, contagem, lógica, 
+                            organização e algoritmos, especialmente nas ciências da computação e engenharias.
+                        </p>
+
+                        <h3>Conteudo</h3>
+                        <p>
+                            Durante todo o Semestre, vimos diversos conteudos e agora por meio deste 
+                            projeto venho falar um pouco sobre o que estudei ao longo desse semestre.
+                            <br><br>
+                        </p>
+                        <br><br>
+                        <!-- Div expansiva 1 -->
+                        <div class="expansive-area">
+                            <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                Tabela Verdade
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="expansive-content">
+                                <br>
+                                <h4>O que é Tabela Verdade</h4>
+                                <p>
+                                    A tabela-verdade é uma ferramenta usada na lógica matemática para representar 
+                                    todas as possíveis combinações de valores lógicos (verdadeiro ou falso) de uma 
+                                    ou mais proposições e o resultado lógico de uma expressão composta por elas.<br>
+                                    Ela mostra de forma sistemática como uma expressão lógica (como “p E q” ou “p 
+                                    OU NÃO q”) se comporta em todos os cenários possíveis.<br>
+                            </p>
+                                <h4>O que foi ensinado?</h4>
+                                <p>
+                                    Durante as aulas, aprendemos sobre os principais conceitos da linguagem C,
+                                    como variáveis, tipos de dados, operadores, estruturas de controle de fluxo (if, for, while), 
+                                    sobre funções, Vetores, Matrizes, Structs e sobre Pilhas e Filas.<br>
+                                </p><br>
+
+                                <h5>Exemplo da Tabela:</h5>
+
+                                <div class="table-responsive">
+                                    <table class="academic-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Operador</th>
+                                                <th>Símbolo</th>
+                                                <th>Nome</th>
+                                                <th>Resultado (exemplo com p = V, q = F)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>E</td>
+                                                <td>∧</td>
+                                                <td>Conjunçãoo</td>
+                                                <td>V ∧ F = F (só é V se ambos forem V)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>OU</td>
+                                                <td>∨</td>
+                                                <td>Disjunção</td>
+                                                <td>V ∨ F = V (é V se ao menos um for V)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NÃO</td>
+                                                <td>¬</td>
+                                                <td>Negação</td>
+                                                <td>¬V = F, ¬F = V</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SE...ENTÃO</td>
+                                                <td>→</td>
+                                                <td>Condicional</td>
+                                                <td>V → F = F (falsa só se V → F)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Div expansiva 2 -->
+                        <div class="expansive-area">
+                            <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                Teoria de Conjuntos
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="expansive-content">
+                                <br>
+                                <h4>O que é Teoria de Conjuntos</h4>
+                                <p>
+                                    A Teoria de Conjuntos é um ramo fundamental da matemática que estuda coleções 
+                                    de objetos, chamados de elementos, que são agrupados sob a noção de conjunto.
+                                    Esses conjuntos podem conter números, letras, pessoas, objetos, ou qualquer 
+                                    coisa bem definida. Ela é considerada a base da matemática moderna, pois fornece 
+                                    a linguagem e os conceitos fundamentais usados em diversas áreas, inclusive na 
+                                    matemática discreta e na computação.<br>
+                            </p> 
+                                <h4>O que foi ensinado?</h4>
+                                <p>
+                                    Falamos sobre:
+                                </p><br>
+                                <p>
+                                    <strong>Conjuntos especiais:</strong><br><br>
+                                    Conjunto vazio:<br>
+                                    É o conjunto que não contém nenhum elemento, denotado por ∅ ou {}.<br><br>
+                                    Conjunto unitário:<br>
+                                    É um conjunto que contém exatamente um elemento, como {a} ou {1}.<br><br>
+                                    Conjunto universo:<br>
+                                    É o conjunto que contém todos os elementos sob consideração em um determinado contexto,
+                                    <br><br>
+                                    <strong>Conjuntos iguais:</strong><br><br>
+                                    Dados dois conjuntos A e B dizemos que A = B se, e somente se, 
+                                    todos os elementos que pertencem a A também pertencem a B e 
+                                    reciprocamente todos os elementos de B também pertencem a A.
+                                    <br><br>
+                                    <strong>Subconjuntos</strong><br><br>
+                                    Dados dois conjuntos A e B dizemos que A é um subconjunto de B 
+                                    se, e somente se, todos os elementos que pertencem a A também 
+                                    pertencem a B (nesse caso a recíproca não necessariamente deve 
+                                    ser verdadeira)
+                                    <br><br>
+                                    <strong>Propriedades da inclusão</strong><br><br>
+                                    Sendo A, B e C três conjuntos quaisquer, valem as seguintes propriedade:<br>
+                                    <ul>
+                                        <li>
+                                            A ⊆ A (todo conjunto é subconjunto de si mesmo)
+                                        </li>
+                                        <li>
+                                            A ⊆ B e B ⊆ A implica A = B (se A é subconjunto de B e B 
+                                            é subconjunto de A, então A e B são iguais)
+                                        </li>
+                                        <li>
+                                            A ⊆ B e B ⊆ C implica A ⊆ C (se A é subconjunto de B e B 
+                                            é subconjunto de C, então A é subconjunto de C)
+                                        </li>
+                                    </ul>
+                                    <br><br>
+                                    <strong>União de conjuntos</strong><br><br>
+                                    A união de dois conjuntos A e B, denotada por A ∪ B, é o conjunto 
+                                    que contém todos os elementos que pertencem a A ou a B (ou a ambos).
+                                    <br><br>
+                                    <strong>Interseção de conjuntos</strong><br><br>
+                                    A interseção de dois conjuntos A e B, denotada por A ∩ B, é o conjunto
+                                    que contém todos os elementos que pertencem a ambos A e B simultaneamente.
+                                    <br><br>
+                                    <strong>Diferença entre conjuntos (−) ou conjunto diferença</strong><br><br>
+                                    A diferença entre o conjuntos A e B, denotada por A – B é o conjunto formado 
+                                    pelos elementos que pertencem a A mas não pertencem a B.
+                                    <br><br>
+                                    <strong>Complementar de um conjuntos</strong><br><br>
+                                    Sejam os conjuntos A e B, com A  B. Chamamos de complementar de A em relação a 
+                                    B denotado por C(A, B) o conjunto formado pelos elementos faltam em A para que 
+                                    A = B, ou simplesmente B - A.
+                                    <br><br>
+                                    <strong>Conjuntos Numéricos</strong><br><br>
+                                    Conjuntos dos números <strong>racionais</strong> (Q)<br>
+                                    São os números que podem ser escritos na forma de fração
+                                    <br>
+                                    Conjuntos dos números <strong>irracionais</strong> são os números que não podem 
+                                    ser escritos na forma de fração
+                                    <br>
+                                    <strong>Conjuntos dos números reais</strong>
+                                    São todos os números que podem ser representados em uma reta 
+                                    chamada, reta real
+                                    <br><br>
+                                </p>
+
+                                <h5>Intervalos</h5><br>
+                                <p>
+                                    Um intervalo é um conjunto de números reais que contém todos os números 
+                                    entre dois limites. Existem diferentes tipos de intervalos, como:
+                                    <br><br>
+                                    <strong>Intervalo fechado:</strong> Inclui os limites, denotado por [a, b].<br>
+                                    <strong>Intervalo aberto:</strong> Não inclui os limites, denotado por (a, b).<br>
+                                    <strong>Intervalo semiaberto:</strong> Inclui um limite e não o outro, denotado por [a, b) ou (a, b].
+                                    <br><br>
+                                </p>
+
+                                <h5>Interseção de intervalos</h5><br>
+
+                                <p>
+                                    A interseção de dois intervalos é o conjunto de números que pertencem a ambos os intervalos. 
+                                    Por exemplo, a interseção de [1, 5] e [3, 7] é [3, 5], pois esses são os números que estão 
+                                    presentes em ambos os intervalos.
+                                    <br><br>
+
+                                    <h5>Complementar entre intervalos</h5>
+                                    <p>
+                                        O complementar de um intervalo é o conjunto de números que não pertencem a esse intervalo. 
+                                        Por exemplo, o complementar de [1, 5] em relação aos números reais é (-∞, 1) ∪ (5, +∞), 
+                                        pois esses são os números que estão fora do intervalo [1, 5].
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Div expansiva 3 -->
+                        <div class="expansive-area">
+                            <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                Análise Combinatória
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="expansive-content">
+                                <br>
+                                <h4>O que é Análise Combinatória</h4>
+                                <p>
+                                    A análise combinatória é a área da matemática que direciona-se 
+                                    ao processo de contagem de elementos em determinados conjuntos.<br>
+                            </p> 
+                                <h4>O que foi ensinado?</h4>
+                                <p>
+                                    Falamos sobre:
+                                </p><br>
+                                <p>
+                                    <strong>Princípio Fundamental da Contagem:</strong><br><br>
+                                    O princípio fundamental da contagem afirma que se um evento pode ocorrer de m maneiras 
+                                    e outro evento pode ocorrer de n maneiras, então os dois eventos podem ocorrer juntos 
+                                    de m * n maneiras.<br><br>
+                                    <strong>Arranjos simples (sem repetição):</strong><br><br>
+                                    Consideremos o conjunto A={a1, a2, a3, ..., am}. Chamamos de 
+                                    arranjo m elementos, tomados r a r (1 < r < m), qualquer rupla 
+                                    formada com elementos de A todos distintos.
+                                    <br><br>
+                                    <strong>Arranjos com repetição:</strong><br><br>
+                                    Consideremos o conjunto A={a1, a2, a3, ..., am}. Chamamos de 
+                                    arranjo com repetição dos m elementos, tomados r a r, toda 
+                                    r-upla ordenada formada com elementos de A não necessariamente distintos.
+                                    <br><br>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Div expansiva 4 -->
+                        <div class="expansive-area">
+                            <button class="expansive-toggle" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                                Grafos
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="expansive-content">
+                                <br>
+                                <h4>O que é Teoria dos Grafos</h4>
+                                <p>
+                                    A Teoria dos Grafos é um campo da Matemática Discreta que estuda estruturas 
+                                    chamadas grafos, as quais servem para representar relações entre objetos ou 
+                                    entidades. Essa teoria é amplamente utilizada na computação, engenharia, 
+                                    biologia, logística, redes sociais, internet, entre outras áreas, por sua 
+                                    capacidade de modelar situações do mundo real de maneira clara e lógica.<br>
+                            </p> 
+                                <h4>O que foi ensinado?</h4>
+                                <p>
+                                    Falamos sobre:
+                                </p><br>
+                                <p>
+                                    <strong>Grafos:</strong><br><br>
+                                    Grafos: Um grafo é uma tripla ordenada (N,A,g) onde:<br>
+                                    • N = um conjunto não vazio de vértices (nós, “nodes” ou nodos)<br>
+                                    • A = um conjunto de arestas (arcos ou “edge”);<br>
+                                    • g = uma função que associa cada aresta a a um par nãoordenado
+                                    x - y de vértices chamados de extremos de a.<br>
+                                    <strong>OBSERVAÇÃO:</strong> Os grafos, aqui considerados, terão sempre 
+                                    um número finito de vértices e de arestas.
+                                </p><br><br>
+                                <h4>Definições Básicas</h4>
+                                <p>
+                                    <strong>Vértices Adjacentes</strong><br>
+                                    Dois vértices em um grafo são adjacentes se forem extremo de uma mesma aresta
+                                    <br><br>
+                                    <strong>Laços</strong><br>
+                                    É uma aresta de extremo n - n.
+                                    <br><br>
+                                    <strong>Arestas paralelas</strong><br>
+                                    São arestas que possuem os mesmos extremos.
+                                    <br><br>
+                                    <strong>Grafo Simples</strong><br>
+                                    É um grafo que não possui laços nem arestas paralelas.
+                                    <br><br>
+                                    <strong>Vértice isolado</strong><br>
+                                    É um vértice que não é adjacente a qualquer outro
+                                    <br><br>
+                                    <strong>Grau do vértice</strong><br>
+                                    É o número de arestas que o tem como extremo ou 
+                                    incidentes no mesmo.
+                                    <br><br>
+                                    <strong>Caminho</strong><br>
+                                    É uma sequência de arestas que liga dois vértices,
+                                    onde cada aresta é adjacente à anterior e à seguinte.
+                                    <br><br>
+                                    <strong>Ciclo</strong><br>
+                                    Um ciclo em um grafo é um caminho de algum vértice n0 de 
+                                    forma que nenhum vértice ocorra mais de uma vez no caminho 
+                                    exceto o próprio n0.
+                                    <br>
+                                </p>
+                                <h3>Grafos direcionados:</h3>
+                                <p>
+                                    Um grafo é direcionado quando a ordem da conexão é prédeterminada.
+                                </p><br>
+                                <h3>Representação Computacional dos Grafos</h3>
+                                <p>
+                                    <strong>Matriz de Adjacências</strong>
+                                    <br>
+                                    É a representação do grafo onde os vértices ocupam a 
+                                    posição das linhas/colunas e o número de arestas que conectam 
+                                    cada vértice ocupam os coeficientes das matrizes.<br><br>
+
+                                    Em um grafo direcionado as “saídas” de uma aresta é colocada 
+                                    nas linhas enquanto que as “entradas” nas colunas.
+                                </p>
+
+                                <h4>Árvores</h4>
+                                <p>
+                                    Uma árvore é um grafo acíclico e conexo com um vértice 
+                                    designado como raiz da árvore e os demais como galhos e folhas.
+                                </p>
+                                <div class="highlight-box">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <p>
+                                        OBS:<br>
+                                        (1) Uma árvore que não possui um vértice definido como raiz 
+                                        é dita árvore não-enraizada (b).<br>
+                                        (2) Em geral dispomos a raiz na parte superior da árvore, como em (a).
+                                    </p>
+                                </div>
+                                <br>
+                                <h5>Árvore de Decisão</h5>
+                                <p>
+                                    Uma árvore de decisão é uma árvore na qual os vértices internos 
+                                    representam ações, as arestas representam os resultados de uma 
+                                    ação e as folhas representam os resultados finais.<br><br>
+                                </p>
+                                <img src="../../recurs/img/Exemplo-mat.png" alt="Exemplo">
+                                <h5>Árvore de Decisão: Algoritmo de busca</h5>
+                                <p>
+                                    Um algoritmo de busca procura um elemento em uma lista e 
+                                    identifica se esse elemento pertence ou não a esse conjunto. Temos:<br>
+
+                                    • <Strong>Busca Sequencial:</Strong><br>
+                                    A busca sequencial distingue dois possíveis resultados da comparação 
+                                    de x com um elemento da lista L(i). Se x=L(i) o algoritmo termina 
+                                    (x foi encontrado), caso contrário a próxima comparação é feita com L(i+1).
+                                    <br><br>
+                                    • <Strong>Busca Binária.</Strong><br>
+                                    A busca binária reconhece três possíveis resultados em cada comparação:<br>
+                                    • x = L(i) o algoritmo termina e x foi encontrado;<br>
+                                    • x < L(i) o algoritmo continua na metade esquerda da lista;<br>
+                                    • x > L(i) o algoritmo continua na metade direita da lista.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Rodapé -->
+        <footer class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 <span>Gustavo Porto</span>. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Desenvolvido com Visual Estudio Code por Gustavo Henrique Moreira Porto</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        //efeito de trasnparencia do navbar
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const inicio = document.querySelector('.inicio-section');
+            const inicioBottom = inicio.offsetTop + inicio.offsetHeight;
+
+            if (window.scrollY >= inicioBottom - 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Botão voltar ao topo
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 400) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        // Scroll suave para o topo
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

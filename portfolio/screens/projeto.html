@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGO | Gustavo Porto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos Gerais -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projeto.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Meu<span>Portfólio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materias.html">Matérias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Apresentação do Projeto -->
+    <section id="projeto" class="py-5 hero-section" style="background: url('../recurs/img/Projeto1-img.jpg') no-repeat center center/cover;">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative" style="z-index:2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="hero-title">SIGO</h1>
+                <h2 class="hero-subtitle">Sistema de Informatização e Gerenciamento de Oficinas</h2>
+                <h3 class="projeto-integrador-title mt-5 mb-0">Projeto Integrador</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Referencia da img -->
+    <div class="img-attribution text-center">
+        Imagem de fundo: <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Designed by Freepik</a>
+    </div>
+</section>
+
+    <!-- Seção Resumo do Projeto -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resumo da <span>Ideia</span></h2>
+                <p>
+                    Este trabalho propõe um sistema para modernizar a gestão de oficinas mecânicas, 
+                    com foco em organização, transparência e eficiência. A plataforma visa facilitar 
+                    o controle de ordens de serviço, veículos, clientes, agendamentos e estoque, além 
+                    de oferecer um espaço exclusivo para que os clientes acompanhem o histórico de 
+                    manutenção e serviços em andamento. Com níveis de acesso distintos para 
+                    administradores, mecânicos e clientes, o sistema promove uma interação segura e 
+                    prática. Desenvolvido com tecnologias web e mobile, é acessível de qualquer lugar.<br> 
+                    A proposta se destaca por atender a um setor ainda marcado por processos manuais, 
+                    contribuindo para sua profissionalização, melhorando o atendimento ao cliente e 
+                    auxiliando na tomada de decisões com relatórios e indicadores.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="content-box p-4 shadow-sm bg-white rounded">
+                        <h3>Funcionalidades Principais</h3>
+                        <ul class="about-list">
+                            <li>Cadastro e login de usuários</li>
+                            <li>Interface intuitiva e responsiva</li>
+                            <li>Controle de ordens de serviço</li>
+                            <li>Histórico de atendimentos</li>
+                            <li>Gestão de peças</li><br>
+                            <p>
+                                O projeto também é pensada para o cliente final, permitindo que ele:
+                            </p>
+                            <li>Acompanhe o status do seu veículo em tempo real</li>
+                            <li>Visualize orçamentos</li>
+                            <li>Solicite relatórios detalhados</li>
+                            <li>Mantenha um histórico de serviços realizados</li>
+                        </ul>
+                        <p>
+                            O desenvolvimento está sendo realizado em equipe, utilizando 
+                            metodologias ágeis e ferramentas modernas como <strong>GitHub</strong> 
+                            para melhor trabalho em equipe e <strong>Visual Studio</strong> para codificação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Imagens do App -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Imagens do <span>App</span></h2>
+                <p>Veja abaixo algumas telas do nosso aplicativo em desenvolvimento:</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="project-card" style="cursor:pointer;"
+                    data-img="../recurs/img/imagens-tcc/tela-inicial.png"
+                    onclick="expandirImagem(this)">
+                    <div class="project-img">
+                        <img src="../recurs/img/imagens-tcc/tela-inicial.png" class="img-fluid rounded" alt="Tela Inicial">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tela Inicial</h3>
+                        <p>Apresentação e acesso rápido às principais funções.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card" style="cursor:pointer;"
+                    data-img="../recurs/img/imagens-tcc/tela-Cadastro-Cliente.png"
+                    onclick="expandirImagem(this)">
+                    <div class="project-img">
+                        <img src="../recurs/img/imagens-tcc/tela-Cadastro-Cliente.png" class="img-fluid rounded" alt="Tela para cadastro de cliente">
+                    </div>
+                        <div class="project-info">
+                            <h3>Cadastrar Cliente</h3>
+                            <p>Tela de Cadastro para novos clientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card" style="cursor:pointer;"
+                    data-img="../recurs/img/imagens-tcc/tela-Cadastro-Veiculo.png"
+                    onclick="expandirImagem(this)">
+                        <div class="project-img">
+                            <img src="../recurs/img/imagens-tcc/Tela-Cadastro-Veiculo.png" class="img-fluid rounded" alt="Tela para cadastro de Veiculo">
+                        </div>
+                        <div class="project-info">
+                            <h3>Cadastrar Veiculo</h3>
+                            <p>Tela de Cadastro para os Carros dos Clientes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card" style="cursor:pointer;"
+                    data-img="../recurs/img/imagens-tcc/tela-cadastro-servico.png"
+                    onclick="expandirImagem(this)">
+                        <div class="project-img">
+                            <img src="../recurs/img/imagens-tcc/tela-cadastro-servico.png" class="img-fluid rounded" alt="Tela para cadastro de Veiculo">
+                        </div>
+                        <div class="project-info">
+                            <h3>Cadastrar Serviço</h3>
+                            <p>Tela de Cadastro para os serviços realizados durante o expediente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card" style="cursor:pointer;"
+                    data-img="../recurs/img/imagens-tcc/tela-pesquisar-pedido.png"
+                    onclick="expandirImagem(this)">
+                        <div class="project-img">
+                            <img src="../recurs/img/imagens-tcc/tela-pesquisar-pedido.png" class="img-fluid rounded" alt="Tela para cadastro de Veiculo">
+                        </div>
+                        <div class="project-info">
+                            <h3>Pesquisar Serviço</h3>
+                            <p>Tela de para listar e pesquisar serviços realizados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 <span>Gustavo Porto</span>. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Desenvolvido com Visual Estudio Code por Gustavo Henrique Moreira Porto</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Efeito de transparência do navbar e botão voltar ao topo
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const hero = document.querySelector('.hero-section');
+            const heroBottom = hero.offsetTop + hero.offsetHeight;
+
+            if (window.scrollY >= heroBottom - 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Botão voltar ao topo
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 400) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+
+        // Scroll suave para o topo
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+
+        function expandirImagem(card) {
+            var imgSrc = card.getAttribute('data-img');
+            var modalImg = document.getElementById('modalImg');
+            modalImg.src = imgSrc;
+            var imgModal = new bootstrap.Modal(document.getElementById('imgModal'));
+            imgModal.show();
+        }
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/script.js"></script>
+
+    <!-- Modal para exibir imagem expandida -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 text-center">
+            <img id="modalImg" src="" alt="Imagem expandida" class="img-fluid rounded shadow">
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
